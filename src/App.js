@@ -21,9 +21,8 @@ import {
 const AuthContext = createContext();
 const useAuth = () => useContext(AuthContext);
 
-// Exemple complet :
 const API_BASE = process.env.NODE_ENV === 'production' 
-  ? 'thirsty-grass-production.up.railway.app/api'
+  ? 'https://thirsty-grass-production.up.railway.app/api'  // ✅ Avec https://
   : 'http://localhost:3001/api';
 
 
